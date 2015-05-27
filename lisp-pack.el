@@ -10,6 +10,7 @@
                                        paredit
                                        fold-dwim
                                        smartscan
+                                       lispy
                                        clojure-mode
                                        highlight
                                        eval-sexp-fu))
@@ -19,11 +20,12 @@
 (require 'fold-dwim)
 (require 'smartscan)
 (require 'clojure-mode)
+(require 'lispy)
 
 ;; common-lisp setup
 
 ;; Replace "sbcl" with the path to your implementation
-;; (setq inferior-lisp-program "sbcl")
+(setq inferior-lisp-program "sbcl")
 
 ;; when using the git repository
 ;;(add-to-list 'load-path "~/repo/perso/dot-files/slime")
@@ -42,7 +44,8 @@
               (local-set-key (kbd "C-c s t") 'fold-dwim-toggle)
               (local-set-key (kbd "C-c s h") 'fold-dwim-hide-all)
               (local-set-key (kbd "C-c s s") 'fold-dwim-show-all)
-              (smartscan-mode 1))))
+              (smartscan-mode 1)
+              (lispy-mode 1))))
 
 ;; (setq slime-net-coding-system 'utf-8-unix)
 
