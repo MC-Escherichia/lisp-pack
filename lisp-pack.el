@@ -6,6 +6,7 @@
 
 (require 'install-packages-pack)
 (install-packages-pack/install-packs '(ediff
+                                       slime
                                        hideshow
                                        paredit
                                        fold-dwim
@@ -25,7 +26,9 @@
 ;; common-lisp setup
 
 ;; Replace "sbcl" with the path to your implementation
-(setq inferior-lisp-program "sbcl")
+(setq inferior-lisp-program "/usr/bin/sbcl")
+(setq slime-contribs '(slime-fancy inferior-slime))
+(load (expand-file-name "~/quicklisp/slime-helper.el"))
 
 ;; when using the git repository
 ;;(add-to-list 'load-path "~/repo/perso/dot-files/slime")
