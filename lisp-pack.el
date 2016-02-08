@@ -28,13 +28,13 @@
 ;; Replace "sbcl" with the path to your implementation
 
 
-(setq slime-contribs '())
+;; (setq slime-contribs '())
 ;; (load (expand-file-name "~/quicklisp/slime-helper.el"))
-(add-to-list 'load-path "~/quicklisp/local-projects/slime")
-(add-to-list 'load-path "~/quicklisp/local-projects/slime/contrib")
-(require 'slime-autoloads)
-(slime-setup '(slime-js slime-repl))
-(setq inferior-lisp-program "/usr/bin/sbcl")
+;; (add-to-list 'load-path "~/quicklisp/local-projects/slime")
+;; (add-to-list 'load-path "~/quicklisp/local-projects/slime/contrib")
+;; (require 'slime-autoloads)
+;; (slime-setup '(slime-js slime-repl))
+;; (setq inferior-lisp-program "/usr/bin/sbcl")
 
 ;; when using the git repository
 ;;(add-to-list 'load-path "~/repo/perso/dot-files/slime")
