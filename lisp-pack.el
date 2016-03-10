@@ -32,8 +32,6 @@
 (load (expand-file-name "~/quicklisp/slime-helper.el"))
 ;; (add-to-list 'load-path "~/quicklisp/dists/quicklisp/software/slime-2.14/")
 ;; (add-to-list 'load-path "~/quicklisp/dists/quicklisp/software/slime-2.14/contrib")
-(require 'slime-autoloads)
-(require 'slime)
 (eval-after-load 'slime-js
   (slime-setup '(slime-repl slime-fancy)))
 (setq inferior-lisp-program "/usr/bin/sbcl")
